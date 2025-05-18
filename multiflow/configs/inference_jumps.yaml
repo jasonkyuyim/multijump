@@ -24,10 +24,6 @@ inference:
     provide_kappa: False
     codesign_separate_t: False
 
-    # rots:
-    #   corrupt: True
-    #   sample_schedule: exp
-    #   exp_rate: 10
     rots:
       corrupt: True
       sample_schedule: exp
@@ -61,6 +57,7 @@ inference:
       rog:
         weight: 20.0
         cutoff: 5.0
+
     aatypes:
       corrupt: True
       schedule: linear

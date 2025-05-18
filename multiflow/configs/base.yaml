@@ -29,11 +29,27 @@ interpolant:
   codesign_forward_fold_prop: 0.0
   codesign_inverse_fold_prop: 0.0
 
+  vmf:
+    path_name: vmf
+    kappa_max: 200.0
+    kappa_min: 0.01
+    t_min: 0.01
+    logive_approx: False
+    upper_half: True
+    kappa_alpha: 4.0
+
   rots:
     corrupt: True
-    train_schedule: linear
     sample_schedule: exp
     exp_rate: 10
+    num_jump_bins: 2056
+    jump_weight: 1.0
+    jump_schedule: fixed
+    jump_exp_weight: 1.0
+    jump_temp: 1.0
+    flow_weight: 0.0
+    flow_schedule: fixed
+    flow_exp_weight: 1.0
 
   trans:
     corrupt: True
